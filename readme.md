@@ -1,6 +1,8 @@
 # C++实战案例
 
-系统：ubuntu 18.04		开发平台：VSCode		
+系统：ubuntu 18.04 LTS		
+
+开发平台：VSCode		
 
 ## 1、基于 STL 的比赛评分系统
 
