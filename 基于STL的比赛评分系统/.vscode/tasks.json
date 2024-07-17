@@ -1,0 +1,12 @@
+{
+    //配置tasks.json文件（编译用）
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "task1", //你的设置文件名，可随便起
+            "type": "shell",//运行task的平台，一般是shell
+            "command": "bash ./.vscode/build.sh"//普通的shell命令
+            //运行当前目录下的build.sh脚本
+        }
+    ]
+}

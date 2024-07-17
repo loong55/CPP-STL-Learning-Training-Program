@@ -1,0 +1,35 @@
+{
+   //配置launch.json文件（调试用）
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) 启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a",
+            //设置待调试的可执行文件为工作空间中bin目录的a
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            //目标工作目录为当前工作空间
+            "environment": [],
+            "externalConsole": false,//打开外部终端
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "task1" 
+            //调试前执行tasks.json中的task1任务，即执行build.sh脚本
+        }
+
+    ]
+}

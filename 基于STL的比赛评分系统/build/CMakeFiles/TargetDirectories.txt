@@ -1,0 +1,3 @@
+/home/book/Desktop/C++_lesson/build/CMakeFiles/rebuild_cache.dir
+/home/book/Desktop/C++_lesson/build/CMakeFiles/a.dir
+/home/book/Desktop/C++_lesson/build/CMakeFiles/edit_cache.dir
